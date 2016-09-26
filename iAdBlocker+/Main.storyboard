@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mdk-ct-yIM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Sfs-0L-WYl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mdk-ct-yIM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hl1-5h-8oL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.34460787679999999" blue="0.30692459309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h3W-jk-q4d" kind="relationship" relationship="rootViewController" id="DjV-Mr-zZG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sz-4D-0ZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="-63"/>
+        </scene>
+        <!--AdBlocker+-->
+        <scene sceneID="EPA-k7-6bD">
+            <objects>
+                <viewController id="h3W-jk-q4d" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dHz-9K-069"/>
+                        <viewControllerLayoutGuide type="bottom" id="ueT-kw-QYG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nlQ-kE-VMR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1: Go to iOS Settings app..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4V-w5-K6N">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Below are instructions for setting up AdBlocker+ for Safari" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUw-PA-GX4">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for purchasing AdBlocker+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXK-Da-Ezg">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.67000001668930054" green="0.67000001668930054" blue="0.67000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2: Navigate to Safari ➝ Content Blockers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XT0-2p-yyt">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3: Find AdBlocker+ and Enable..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ir-mA-DD8">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASA-dV-NUE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="gAN-N3-LSk"/>
+                                    <constraint firstAttribute="width" constant="53" id="nlz-Fo-fXj"/>
+                                </constraints>
+                                <state key="normal" image="ios-8-settings-icon"/>
+                                <connections>
+                                    <action selector="settingsTapped:" destination="h3W-jk-q4d" eventType="touchUpInside" id="HB3-UY-zmO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SafariSettings" translatesAutoresizingMaskIntoConstraints="NO" id="Got-IU-UQm">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="GER-A1-jc1"/>
+                                    <constraint firstAttribute="width" constant="291" id="st8-cK-URN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ContentBlockers" translatesAutoresizingMaskIntoConstraints="NO" id="VLN-5c-KSv">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="BLu-qb-f3b"/>
+                                    <constraint firstAttribute="height" constant="36" id="Xmx-3f-eAB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iAdBlocker+ Enabled" translatesAutoresizingMaskIntoConstraints="NO" id="FPL-h6-uDS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="0gf-vr-Dpl"/>
+                                    <constraint firstAttribute="width" constant="291" id="wmM-Yo-RBc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Done !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMf-tK-JOG">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are now Blocking Ads in Safari !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-9L-NRu">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VLN-5c-KSv" firstAttribute="centerX" secondItem="nlQ-kE-VMR" secondAttribute="centerX" id="0te-RJ-8GS"/>
+                            <constraint firstItem="Ve5-9L-NRu" firstAttribute="centerX" secondItem="nlQ-kE-VMR" secondAttribute="centerX" id="5vN-Dy-TwO"/>
+                            <constraint firstItem="K4V-w5-K6N" firstAttribute="leading" secondItem="nlQ-kE-VMR" secondAttribute="leading" constant="20" id="6A4-mW-zBg"/>
+                            <constraint firstItem="ASA-dV-NUE" firstAttribute="centerX" secondItem="nlQ-kE-VMR" secondAttribute="centerX" id="6yo-z3-m9w"/>
+                            <constraint firstItem="eUw-PA-GX4" firstAttribute="top" secondItem="tXK-Da-Ezg" secondAttribute="bottom" constant="8" id="75x-qH-Fje"/>
+                            <constraint firstItem="K4V-w5-K6N" firstAttribute="top" secondItem="eUw-PA-GX4" secondAttribute="bottom" constant="22" id="D1a-V0-CIF"/>
+                            <constraint firstItem="XT0-2p-yyt" firstAttribute="top" secondItem="ASA-dV-NUE" secondAttribute="bottom" constant="8" id="Da4-yw-D5z"/>
+                            <constraint firstItem="Ve5-9L-NRu" firstAttribute="top" secondItem="IMf-tK-JOG" secondAttribute="bottom" constant="8" id="DhG-mH-HVd"/>
+                            <constraint firstItem="IMf-tK-JOG" firstAttribute="centerX" secondItem="nlQ-kE-VMR" secondAttribute="centerX" id="J0o-Tn-qYl"/>
+                            <constraint firstItem="Got-IU-UQm" firstAttribute="centerX" secondItem="nlQ-kE-VMR" secondAttribute="centerX" id="KcW-xi-9Zb"/>
+                            <constraint firstItem="9Ir-mA-DD8" firstAttribute="leading" secondItem="nlQ-kE-VMR" secondAttribute="leading" constant="15" id="YJO-h6-b5S"/>
+                            <constraint firstItem="tXK-Da-Ezg" firstAttribute="centerX" secondItem="nlQ-kE-VMR" secondAttribute="centerX" id="anR-T2-4rJ"/>
+                            <constraint firstItem="eUw-PA-GX4" firstAttribute="centerX" secondItem="nlQ-kE-VMR" secondAttribute="centerX" id="bmR-N4-DLA"/>
+                            <constraint firstItem="9Ir-mA-DD8" firstAttribute="top" secondItem="VLN-5c-KSv" secondAttribute="bottom" constant="8" id="crm-oo-hzJ"/>
+                            <constraint firstItem="IMf-tK-JOG" firstAttribute="top" secondItem="FPL-h6-uDS" secondAttribute="bottom" constant="8" id="jUh-gg-VF1"/>
+                            <constraint firstItem="FPL-h6-uDS" firstAttribute="top" secondItem="9Ir-mA-DD8" secondAttribute="bottom" constant="8" id="mPO-L3-ayd"/>
+                            <constraint firstItem="FPL-h6-uDS" firstAttribute="centerX" secondItem="nlQ-kE-VMR" secondAttribute="centerX" id="oKU-oK-kmV"/>
+                            <constraint firstItem="VLN-5c-KSv" firstAttribute="top" secondItem="Got-IU-UQm" secondAttribute="bottom" constant="8" id="pD5-MH-eId"/>
+                            <constraint firstItem="K4V-w5-K6N" firstAttribute="leading" secondItem="nlQ-kE-VMR" secondAttribute="leading" constant="13" id="rL3-hr-MyY"/>
+                            <constraint firstItem="K4V-w5-K6N" firstAttribute="leading" secondItem="nlQ-kE-VMR" secondAttribute="leading" constant="15" id="s40-nF-jZX"/>
+                            <constraint firstItem="ASA-dV-NUE" firstAttribute="top" secondItem="K4V-w5-K6N" secondAttribute="bottom" constant="8" id="tot-7D-u8G"/>
+                            <constraint firstItem="tXK-Da-Ezg" firstAttribute="top" secondItem="dHz-9K-069" secondAttribute="bottom" constant="29" id="txj-e3-CTj"/>
+                            <constraint firstItem="Got-IU-UQm" firstAttribute="top" secondItem="XT0-2p-yyt" secondAttribute="bottom" constant="8" id="vZZ-VI-BxI"/>
+                            <constraint firstItem="XT0-2p-yyt" firstAttribute="leading" secondItem="nlQ-kE-VMR" secondAttribute="leading" constant="15" id="zFn-NL-BUI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6A4-mW-zBg"/>
+                                <exclude reference="rL3-hr-MyY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="AdBlocker+" id="z2t-aH-6jt">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="2HV-dF-onp">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wGU-Jp-Jo5">
+                                <rect key="frame" x="339" y="12" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="i Button"/>
+                                <connections>
+                                    <segue destination="W2K-2V-qc0" kind="show" id="QAN-Oa-wJr"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="allDoneLabel" destination="IMf-tK-JOG" id="gXi-if-prK"/>
+                        <outlet property="blockingAdsLabel" destination="Ve5-9L-NRu" id="eBW-kD-dKb"/>
+                        <outlet property="instructionsLabel" destination="eUw-PA-GX4" id="TOG-fa-x2T"/>
+                        <outlet property="stepOneLabel" destination="K4V-w5-K6N" id="CtR-Gi-pLY"/>
+                        <outlet property="stepThreeLabel" destination="9Ir-mA-DD8" id="gwy-en-wdF"/>
+                        <outlet property="stepTwoLabel" destination="XT0-2p-yyt" id="CxB-D6-HTs"/>
+                        <outlet property="thankyouLabel" destination="tXK-Da-Ezg" id="HB1-hK-eRd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGO-33-ncM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="-63"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="qhK-3m-i0P">
+            <objects>
+                <viewController id="W2K-2V-qc0" userLabel="Info" customClass="InfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GaE-AM-jIM"/>
+                        <viewControllerLayoutGuide type="bottom" id="K0B-zd-urp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ngn-gw-0LW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iAdBlocker+ Icon" translatesAutoresizingMaskIntoConstraints="NO" id="yB5-ER-eO8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="mup-Cg-i6E"/>
+                                    <constraint firstAttribute="height" constant="143" id="vle-gj-2Vg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdBlocker+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS7-P7-Ah0">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <color key="textColor" red="0.67000001668930054" green="0.67000001668930054" blue="0.67000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Assistance, Questions, Bug Reporting E-mail me:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHh-Bl-NRe">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.67000001668930054" green="0.67000001668930054" blue="0.67000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Sami Sharaf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wot-aG-VmH">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.67000001668930054" green="0.67000001668930054" blue="0.67000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="samisharafdev@hotmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy4-6J-5xj">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" red="0.67000001668930054" green="0.67000001668930054" blue="0.67000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.10.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZI2-WE-aio">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="iZp-27-Msc"/>
+                                    <constraint firstAttribute="width" constant="79" id="ww5-7F-aEA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                                <color key="textColor" red="0.67000001668930054" green="0.67000001668930054" blue="0.67000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MHh-Bl-NRe" firstAttribute="top" secondItem="ZI2-WE-aio" secondAttribute="bottom" constant="8" id="4hD-K0-UPu"/>
+                            <constraint firstItem="MHh-Bl-NRe" firstAttribute="top" secondItem="ZI2-WE-aio" secondAttribute="bottom" constant="3.5" id="8p1-id-Kcg"/>
+                            <constraint firstItem="Vy4-6J-5xj" firstAttribute="top" secondItem="MHh-Bl-NRe" secondAttribute="bottom" constant="7.5" id="E1t-Wy-3yD"/>
+                            <constraint firstItem="wot-aG-VmH" firstAttribute="top" secondItem="hS7-P7-Ah0" secondAttribute="bottom" constant="8" id="EkH-3f-gZv"/>
+                            <constraint firstItem="ZI2-WE-aio" firstAttribute="centerX" secondItem="ngn-gw-0LW" secondAttribute="centerX" id="PJT-wc-TkC"/>
+                            <constraint firstItem="ZI2-WE-aio" firstAttribute="top" secondItem="wot-aG-VmH" secondAttribute="bottom" constant="6.5" id="Vbn-3c-Lle"/>
+                            <constraint firstItem="hS7-P7-Ah0" firstAttribute="centerX" secondItem="ngn-gw-0LW" secondAttribute="centerX" id="XVw-iR-hYm"/>
+                            <constraint firstItem="Vy4-6J-5xj" firstAttribute="centerX" secondItem="ngn-gw-0LW" secondAttribute="centerX" id="bFF-B3-csb"/>
+                            <constraint firstItem="MHh-Bl-NRe" firstAttribute="centerX" secondItem="ngn-gw-0LW" secondAttribute="centerX" id="eLr-BM-Hrd"/>
+                            <constraint firstItem="hS7-P7-Ah0" firstAttribute="top" secondItem="yB5-ER-eO8" secondAttribute="bottom" constant="20" id="gS3-lq-hg8"/>
+                            <constraint firstItem="wot-aG-VmH" firstAttribute="centerX" secondItem="ngn-gw-0LW" secondAttribute="centerX" id="ndZ-Zz-37q"/>
+                            <constraint firstItem="ZI2-WE-aio" firstAttribute="top" secondItem="wot-aG-VmH" secondAttribute="bottom" constant="8" id="ofk-g9-0Sp"/>
+                            <constraint firstItem="yB5-ER-eO8" firstAttribute="centerX" secondItem="ngn-gw-0LW" secondAttribute="centerX" id="ohi-xb-L8P"/>
+                            <constraint firstItem="yB5-ER-eO8" firstAttribute="top" secondItem="GaE-AM-jIM" secondAttribute="bottom" constant="20" id="r8A-Vk-0B0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8p1-id-Kcg"/>
+                                <exclude reference="ofk-g9-0Sp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="Vus-vN-Pmx"/>
+                    <connections>
+                        <outlet property="appIconImage" destination="yB5-ER-eO8" id="RpX-B4-kKz"/>
+                        <outlet property="assistanceLabel" destination="MHh-Bl-NRe" id="ymB-RO-Z2E"/>
+                        <outlet property="bySamiSharafLabel" destination="wot-aG-VmH" id="Max-cj-Zwb"/>
+                        <outlet property="emailLabel" destination="Vy4-6J-5xj" id="viG-Go-x6y"/>
+                        <outlet property="iAdBlockerPlusLabel" destination="hS7-P7-Ah0" id="HxZ-yd-dwr"/>
+                        <outlet property="versionLabel" destination="ZI2-WE-aio" id="aO5-g6-BBL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQH-rV-UfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549.5999999999999" y="-63.418290854572717"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ContentBlockers" width="250" height="29"/>
+        <image name="SafariSettings" width="250" height="31"/>
+        <image name="i Button" width="33" height="33"/>
+        <image name="iAdBlocker+ Enabled" width="375" height="107"/>
+        <image name="iAdBlocker+ Icon" width="512" height="512"/>
+        <image name="ios-8-settings-icon" width="224" height="224"/>
+    </resources>
+</document>
