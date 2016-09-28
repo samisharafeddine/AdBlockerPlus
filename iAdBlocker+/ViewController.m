@@ -20,8 +20,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *stepOneLabel; //Step 1 instruction Label.
 @property (strong, nonatomic) IBOutlet UILabel *stepTwoLabel; //Step 2 instruction Label.
 @property (strong, nonatomic) IBOutlet UILabel *stepThreeLabel; //Step 3 instruction Label.
-@property (strong, nonatomic) IBOutlet UILabel *allDoneLabel; //All Done Label.
-@property (strong, nonatomic) IBOutlet UILabel *blockingAdsLabel; //You are now blocking ads in safari Label.
+@property (strong, nonatomic) IBOutlet UILabel *adBlockerStatusLabel; //AdBlocker Status Label.
+@property (strong, nonatomic) IBOutlet UILabel *blockingStatus; //Blocking status label.
+
+@property (strong, nonatomic) IBOutlet UIImageView *statusImage; //Red - Green status image indicator.
 
 @end
 
@@ -61,7 +63,41 @@
         }
     }];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleBlockerState)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
     
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    [self handleBlockerState];
+    
+}
+
+- (void)handleBlockerState {
+    
+    // getStateofContentBlockerIdentifier API is iOS 10 only
+    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){.majorVersion = 10, .minorVersion = 0, .patchVersion = 0}]) {
+        [SFContentBlockerManager getStateOfContentBlockerWithIdentifier:APP_EXTENSION_NAME completionHandler:^(SFContentBlockerState * _Nullable state, NSError * _Nullable error) {
+            if (error!=nil) {
+                NSLog(@"GETTING STATE OF %@ FAILED WITH ERROR -%@", APP_EXTENSION_NAME,[error localizedDescription]);
+            } else {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (state.enabled) { // blocker turned ON in settings
+                        self.blockingStatus.text = @"AdBlocker Enabled.";
+                        self.statusImage.image = [UIImage imageNamed:@"Green Circle"];
+                    } else { // blocker turned OFF in settings
+                        self.blockingStatus.text = @"AdBlocker is Disabled.";
+                        self.statusImage.image = [UIImage imageNamed:@"Red Circle"];
+                    }
+                });
+            }
+        }];
+    }
 }
 
 -(IBAction)settingsTapped:(id)sender { //Open App Settings.
