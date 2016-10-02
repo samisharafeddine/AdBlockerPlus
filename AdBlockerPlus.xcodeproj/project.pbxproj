@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2177EABC1DA143FC000A4215 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2177EABB1DA143FC000A4215 /* NotificationCenter.framework */; };
+		2177EAC01DA143FC000A4215 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177EABF1DA143FC000A4215 /* TodayViewController.m */; };
+		2177EAC31DA143FC000A4215 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2177EAC11DA143FC000A4215 /* MainInterface.storyboard */; };
+		2177EAC71DA143FC000A4215 /* AdBlockerPlus Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2177EAB91DA143FC000A4215 /* AdBlockerPlus Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2177EACB1DA15960000A4215 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218D989F1C9A395700D3DC7A /* SafariServices.framework */; };
+		2177EACC1DA15CE8000A4215 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F4BAB11C9B630C0005BC61 /* Images.xcassets */; };
 		218D985C1C9A266100D3DC7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D985B1C9A266100D3DC7A /* main.m */; };
 		218D985F1C9A266100D3DC7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D985E1C9A266100D3DC7A /* AppDelegate.m */; };
 		218D98621C9A266100D3DC7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D98611C9A266100D3DC7A /* ViewController.m */; };
@@ -21,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2177EAC51DA143FC000A4215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 218D984F1C9A266100D3DC7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2177EAB81DA143FC000A4215;
+			remoteInfo = "AdBlockerPlus Widget";
+		};
 		21955CA31C9AEEDB002DF004 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 218D984F1C9A266100D3DC7A /* Project object */;
@@ -38,6 +51,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				21955CA61C9AEEDB002DF004 /* BlockMethod.appex in Embed App Extensions */,
+				2177EAC71DA143FC000A4215 /* AdBlockerPlus Widget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +59,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2177EAB91DA143FC000A4215 /* AdBlockerPlus Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AdBlockerPlus Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2177EABB1DA143FC000A4215 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2177EABE1DA143FC000A4215 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		2177EABF1DA143FC000A4215 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		2177EAC21DA143FC000A4215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2177EAC41DA143FC000A4215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		218D98571C9A266100D3DC7A /* iAdBlockerPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAdBlockerPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		218D985B1C9A266100D3DC7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		218D985D1C9A266100D3DC7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +89,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2177EAB61DA143FC000A4215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2177EACB1DA15960000A4215 /* SafariServices.framework in Frameworks */,
+				2177EABC1DA143FC000A4215 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		218D98541C9A266100D3DC7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,12 +116,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2177EABA1DA143FC000A4215 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2177EABB1DA143FC000A4215 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2177EABD1DA143FC000A4215 /* AdBlockerPlus Widget */ = {
+			isa = PBXGroup;
+			children = (
+				2177EABE1DA143FC000A4215 /* TodayViewController.h */,
+				2177EABF1DA143FC000A4215 /* TodayViewController.m */,
+				2177EAC11DA143FC000A4215 /* MainInterface.storyboard */,
+				2177EAC41DA143FC000A4215 /* Info.plist */,
+			);
+			path = "AdBlockerPlus Widget";
+			sourceTree = "<group>";
+		};
 		218D984E1C9A266100D3DC7A = {
 			isa = PBXGroup;
 			children = (
 				218D989F1C9A395700D3DC7A /* SafariServices.framework */,
 				218D98591C9A266100D3DC7A /* iAdBlocker+ */,
 				21955C9C1C9AEEDB002DF004 /* BlockMethod */,
+				2177EABD1DA143FC000A4215 /* AdBlockerPlus Widget */,
+				2177EABA1DA143FC000A4215 /* Frameworks */,
 				218D98581C9A266100D3DC7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +152,7 @@
 			children = (
 				218D98571C9A266100D3DC7A /* iAdBlockerPlus.app */,
 				21955C9B1C9AEEDB002DF004 /* BlockMethod.appex */,
+				2177EAB91DA143FC000A4215 /* AdBlockerPlus Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +200,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2177EAB81DA143FC000A4215 /* AdBlockerPlus Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2177EACA1DA143FC000A4215 /* Build configuration list for PBXNativeTarget "AdBlockerPlus Widget" */;
+			buildPhases = (
+				2177EAB51DA143FC000A4215 /* Sources */,
+				2177EAB61DA143FC000A4215 /* Frameworks */,
+				2177EAB71DA143FC000A4215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdBlockerPlus Widget";
+			productName = "AdBlockerPlus Widget";
+			productReference = 2177EAB91DA143FC000A4215 /* AdBlockerPlus Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		218D98561C9A266100D3DC7A /* iAdBlockerPlus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 218D98841C9A266100D3DC7A /* Build configuration list for PBXNativeTarget "iAdBlockerPlus" */;
@@ -162,6 +230,7 @@
 			);
 			dependencies = (
 				21955CA41C9AEEDB002DF004 /* PBXTargetDependency */,
+				2177EAC61DA143FC000A4215 /* PBXTargetDependency */,
 			);
 			name = iAdBlockerPlus;
 			productName = "iAdBlocker+";
@@ -195,6 +264,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Sami Sharaf";
 				TargetAttributes = {
+					2177EAB81DA143FC000A4215 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = QV3625575M;
+						ProvisioningStyle = Automatic;
+					};
 					218D98561C9A266100D3DC7A = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = QV3625575M;
@@ -220,11 +294,21 @@
 			targets = (
 				218D98561C9A266100D3DC7A /* iAdBlockerPlus */,
 				21955C9A1C9AEEDB002DF004 /* BlockMethod */,
+				2177EAB81DA143FC000A4215 /* AdBlockerPlus Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2177EAB71DA143FC000A4215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2177EACC1DA15CE8000A4215 /* Images.xcassets in Resources */,
+				2177EAC31DA143FC000A4215 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		218D98551C9A266100D3DC7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +329,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2177EAB51DA143FC000A4215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2177EAC01DA143FC000A4215 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		218D98531C9A266100D3DC7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +360,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2177EAC61DA143FC000A4215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2177EAB81DA143FC000A4215 /* AdBlockerPlus Widget */;
+			targetProxy = 2177EAC51DA143FC000A4215 /* PBXContainerItemProxy */;
+		};
 		21955CA41C9AEEDB002DF004 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 21955C9A1C9AEEDB002DF004 /* BlockMethod */;
@@ -275,7 +372,54 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		2177EAC11DA143FC000A4215 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2177EAC21DA143FC000A4215 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		2177EAC81DA143FC000A4215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QV3625575M;
+				INFOPLIST_FILE = "AdBlockerPlus Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Sami-Sharaf.iAdBlockerPlus.AdBlockerPlus-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2177EAC91DA143FC000A4215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QV3625575M;
+				INFOPLIST_FILE = "AdBlockerPlus Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Sami-Sharaf.iAdBlockerPlus.AdBlockerPlus-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		218D98821C9A266100D3DC7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,6 +571,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2177EACA1DA143FC000A4215 /* Build configuration list for PBXNativeTarget "AdBlockerPlus Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2177EAC81DA143FC000A4215 /* Debug */,
+				2177EAC91DA143FC000A4215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		218D98521C9A266100D3DC7A /* Build configuration list for PBXProject "AdBlockerPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
