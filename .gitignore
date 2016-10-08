@@ -66,4 +66,5 @@ iOSInjectionProject/
 .DS_Store
 profile
 Certificates/
+*.p12
 GoogleService-Info.plist
