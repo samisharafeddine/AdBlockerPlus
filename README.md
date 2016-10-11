@@ -24,5 +24,5 @@ AdBlocker+ uses filters to block all unwanted elements, Filter lists are essenti
 - If you want to change the rules .json file, make sure you set `APP_DEFAULT_BLOCKS_FILE` in `AdBlockerPlusConstants.h` to your desired file name.
 
 ###App Store availability
-This App is available on the apple App Store for free as of 1/10/2016 [v1.10.0]:
+This App is available on the apple App Store for free as of 1/10/2016 [v1.30.0]:
 https://itunes.apple.com/us/app/adblocker+-lightweight-ad/id1081172537?ls=1&mt=8
