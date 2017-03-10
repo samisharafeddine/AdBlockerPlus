@@ -578,6 +578,7 @@
 				2177EAC91DA143FC000A4215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		218D98521C9A266100D3DC7A /* Build configuration list for PBXProject "AdBlockerPlus" */ = {
 			isa = XCConfigurationList;
